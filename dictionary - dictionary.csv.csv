@@ -1,0 +1,32 @@
+Column,Description
+play_id,"A unique character identifier assigned to each individual play, corresponding to the play where the stolen base attempt occurred."
+game_id,"A unique character identifier assigned to each individual game, corresponding to the game where the stolen base attempt occurred."
+catcher_id,"A unique character identifier assigned to each individual catcher, corresponding to the catcher on the play."
+runner_id,"A unique character identifier assigned to each individual runner, corresponding to the runner attempting to steal second on the play."
+pitcher_id,"A unique character identifier assigned to each individual pitcher, corresponding to the pitcher on the play."
+batter_id,"A unique character identifier assigned to each individual batter, corresponding to the batter on the play."
+pitcher_throws,"A character with the value ""L"" if the pitcher on the play throws with his left hand or the value ""R"" if the pitcher on the play throws with his right hand."
+batter_side,"A character with the value ""L"" if the batter on the play hits from the left side or the value ""R"" if the batter on the play hits from the right side."
+outs,An integer indicating how many outs had occurred in the half-inning prior to the stolen base attempt.
+balls,An integer indicating how many balls had occurred in the plate appearance prior to the stolen base attempt.
+strikes,An integer indicating how many strikes had occurred in the plate appearance prior to the stolen base attempt.
+pitch_number,An integer indicating how many pitches had been throwin the plate appearance prior to the stolen base attempt.
+c_pop_time,"A double representing how much time elapsed between the catcher receiving the pitch in his mitt and the time that the catcher's throw arrived at second base. In the event that the catcher's throw was errant and off the base, this number indicates the time that would have elapsed had the throw been made on line."
+c_throw_rel_speed,A double representing the initial velocity of the catcher's throw to second base.
+c_throw_loc_x,"A double representing the horizontal coordinate of the location of the catcher's throw as the throw arrived at second base, in feet, measured from the imaginary line running through second base and home plate."
+c_throw_loc_y,A double representing the distance between home plate and second base in feet. c_throw_loc_x and c_throw_loc_z are measured when a catcher's throw passes this distance.
+c_throw_loc_z,"A double representing the vertical coordinate of the location of the catcher's throw as the throw arrived at second base, in feet, measured from the ground up."
+r_lead,"A double representing the how far off the base the runner at first was standing at the time the pitch was thrown, in feet."
+r_sprint_speed,"A double representing the runner's peak speed on the stolen base attempt, in feet per second."
+p_throw_rel_speed,A double representing the out-of-hand speed of the pitch in miles per hour.
+p_throw_rel_height,"A double representing the vertical coordinate of the pitcher's throwing hand at the time the pitcher releases the pitch, in feet, measured from the ground up."
+p_throw_rel_side,"A double representing the horizontal coordinate of the pitcher's throwing hand at the time the pitcher releases the pitch, in feet, measured from the imaginary line running through second base and home plate."
+p_throw_rel_extension,"A double representing the distance between a pitcher's throwing hand and the pitching rubber at the time the pitcher releases  the pitch, in feet."
+p_throw_loc_height,"A double representing the vertical coordinate of the location of the pitch as it crosses the front of home plate, in feet, measured from the ground up."
+p_throw_loc_side,"A double representing the horizontal coordinate of the location of the pitch as it crosses the front of home plate, in feet, measured from the imaginary line running through second base and home plate."
+p_throw_ind_vert_break,"A double representing how far a pitch moves vertically in the course of its flight to home plate as a result of aerodynamic effects (e.g., with gravity removed), in inches."
+p_throw_vert_break,"A double representing how far a pitch moves vertically in the course of its flight to home plate as a result of both aerodynamic effects and gravity, in inches."
+p_throw_horz_break,"A double representing how far a pitch moves horizontally in the course of its flight to home plate as a result of aerodynamic effects, in inches."
+p_throw_spin_rate,A double representing the out-of-hand rotations-per-minute of a pitch.
+p_throw_spin_axis,A double representing the axis around which the pitch rotates out-of-hand in degrees.
+is_cs,An integer with a value of 1 if the catcher successfully threw out the runner on the stolen base attempt or a 0 if the catcher failed to throw out the runner.
